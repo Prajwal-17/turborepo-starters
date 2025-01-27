@@ -1,0 +1,3 @@
+[submodule "turborepo-tailwind-config"]
+	path = turborepo-tailwind-config
+	url = git@github.com:Prajwal-17/turborepo-tailwind-config.git
