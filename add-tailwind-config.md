@@ -26,7 +26,8 @@
 5.  Then run this cmd  
     **when running from the root folder** =>
 
-          pnpm install @repo/tailwind-config@ --filter=web
+          pnpm add @repo/tailwind-config@workspace:* --filter=web
+          pnpm add @repo/tailwind-config@workspace:* 
 
     **when running from the apps/web folder** =>
 
@@ -35,7 +36,7 @@
     `@workspace:*` to use the local version of package available in the workspace(root) and from npm  
      `--filter-web` flag to install the package in a particular app
 
-6.  Then add `pnpm add tailwindcss postcss autoprefixer -D
+7.  Then add `pnpm add tailwindcss postcss autoprefixer -D
 `  
      Update the tailwind.config and postcss and global.css
 
@@ -52,4 +53,4 @@
 
                 export default config;
 
-7.  Then `pnpm run dev` if doesnt work then remove pnpm-lock.yaml file and `pnpm install`
+8.  Then `pnpm run dev` if doesnt work then remove pnpm-lock.yaml file and `pnpm install`
